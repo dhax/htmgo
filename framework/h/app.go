@@ -2,14 +2,14 @@ package h
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"log/slog"
 	"net/http"
 	"os"
-	"os/exec"
-	"runtime"
+	"os/signal"
 	"strings"
-	"time"
+	"syscall"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/maddalax/htmgo/framework/hx"
@@ -140,6 +140,7 @@ type AppOpts struct {
 
 type App struct {
 	Opts   AppOpts
+	Server *http.Server
 	Router *chi.Mux
 }
 
@@ -148,6 +149,7 @@ func Start(opts AppOpts) {
 	router := chi.NewRouter()
 	instance := App{
 		Opts:   opts,
+		Server: &http.Server{Handler: router},
 		Router: router,
 	}
 	instance.start()
@@ -204,7 +206,6 @@ func GetLogLevel() slog.Level {
 }
 
 func (app *App) start() {
-
 	slog.SetLogLoggerLevel(GetLogLevel())
 
 	app.Router.Use(func(h http.Handler) http.Handler {
@@ -248,30 +249,25 @@ func (app *App) start() {
 
 	slog.Info(fmt.Sprintf("Server started at localhost%s", port))
 
-	if err := http.ListenAndServe(port, app.Router); err != nil {
-		// If we are in watch mode, just try to kill any processes holding that port
-		// and try again
-		if IsDevelopment() && IsWatchMode() {
-			slog.Info("Port already in use, trying to kill the process and start again")
-			if runtime.GOOS == "windows" {
-				cmd := exec.Command("cmd", "/C", fmt.Sprintf(`for /F "tokens=5" %%i in ('netstat -aon ^| findstr :%s') do taskkill /F /PID %%i`, port))
-				cmd.Run()
-			} else {
-				cmd := exec.Command("bash", "-c", fmt.Sprintf("kill -9 $(lsof -ti%s)", port))
-				cmd.Run()
-			}
+	app.Server.Addr = port
 
-			time.Sleep(time.Millisecond * 50)
+	ctx, stop := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
+	defer stop()
 
-			// Try to start server again
-			if err := http.ListenAndServe(port, app.Router); err != nil {
-				slog.Error("Failed to restart server", "error", err)
-				panic(err)
-			}
+	go func() {
+		if err := app.Server.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
+			slog.Error("listen and serve returned err", "err", err)
+			panic(err)
 		}
+	}()
 
-		panic(err)
+	<-ctx.Done()
+	slog.Info("got interrupt signal, shuting down...")
+	if err := app.Server.Shutdown(context.TODO()); err != nil {
+		slog.Error("server shutdown returned an err", "err", err)
 	}
+
+	slog.Info("Server shutdown complete")
 }
 
 func writeHtml(w http.ResponseWriter, element Ren) error {
