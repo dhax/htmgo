@@ -1,10 +1,10 @@
-module github.com/maddalax/htmgo/extensions/websocket
+module github.com/dhax/htmgo/extensions/websocket
 
-go 1.23.0
+go 1.24.0
 
 require (
 	github.com/gobwas/ws v1.4.0
-	github.com/maddalax/htmgo/framework v1.0.6-0.20250106162619-24b41a7604a5
+	github.com/dhax/htmgo/framework v1.0.6-0.20250106162619-24b41a7604a5
 	github.com/puzpuzpuz/xsync/v3 v3.4.0
 	github.com/stretchr/testify v1.9.0
 )

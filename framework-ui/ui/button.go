@@ -1,6 +1,6 @@
 package ui
 
-import "github.com/maddalax/htmgo/framework/h"
+import "github.com/dhax/htmgo/framework/h"
 
 type ButtonProps struct {
 	Id       string

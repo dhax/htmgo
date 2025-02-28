@@ -2,7 +2,7 @@ package partials
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/h"
 	"htmgo-site/internal/httpjson"
 	"time"
 )
@@ -74,7 +74,7 @@ func Star(ctx *h.RequestContext) *h.Element {
 	}
 
 	return h.A(
-		h.Href("https://github.com/maddalax/htmgo"),
+		h.Href("https://github.com/dhax/htmgo"),
 		h.Target("_blank"),
 		h.Class("inline-flex items-center rounded overflow-hidden shadow-sm"),
 		h.Div(

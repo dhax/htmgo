@@ -2,9 +2,9 @@ package h
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/framework/datastructure/orderedmap"
-	"github.com/maddalax/htmgo/framework/hx"
-	"github.com/maddalax/htmgo/framework/internal/util"
+	"github.com/dhax/htmgo/framework/datastructure/orderedmap"
+	"github.com/dhax/htmgo/framework/hx"
+	"github.com/dhax/htmgo/framework/internal/util"
 	"strings"
 )
 

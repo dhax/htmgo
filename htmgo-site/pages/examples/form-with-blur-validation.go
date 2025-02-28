@@ -1,7 +1,7 @@
 package examples
 
 import (
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/h"
 )
 
 func FormWithBlurValidation(ctx *h.RequestContext) *h.Page {

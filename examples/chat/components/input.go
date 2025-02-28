@@ -1,8 +1,8 @@
 package components
 
 import (
-	"github.com/maddalax/htmgo/framework/h"
-	"github.com/maddalax/htmgo/framework/hx"
+	"github.com/dhax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/hx"
 )
 
 type InputProps struct {

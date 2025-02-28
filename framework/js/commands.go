@@ -1,6 +1,6 @@
 package js
 
-import "github.com/maddalax/htmgo/framework/h"
+import "github.com/dhax/htmgo/framework/h"
 
 var AddAttribute = h.AddAttribute
 var RemoveAttribute = h.RemoveAttribute

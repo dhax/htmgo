@@ -1,7 +1,7 @@
 package h
 
 import (
-	"github.com/maddalax/htmgo/framework/hx"
+	"github.com/dhax/htmgo/framework/hx"
 	"net/url"
 )
 

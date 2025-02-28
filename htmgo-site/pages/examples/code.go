@@ -3,7 +3,7 @@ package examples
 import (
 	"bytes"
 	"fmt"
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/h"
 	"htmgo-site/ui"
 	"io"
 	"log/slog"
@@ -17,7 +17,7 @@ import (
 
 func GetGithubPath(path string) string {
 	path = strings.ReplaceAll(path, "/examples/", "/snippets/")
-	return fmt.Sprintf("https://github.com/maddalax/htmgo/tree/master/htmgo-site/partials%s.go", path)
+	return fmt.Sprintf("https://github.com/dhax/htmgo/tree/master/htmgo-site/partials%s.go", path)
 }
 
 func GetGithubRawPath(path string) string {

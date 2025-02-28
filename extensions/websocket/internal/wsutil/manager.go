@@ -2,9 +2,9 @@ package wsutil
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/extensions/websocket/opts"
-	"github.com/maddalax/htmgo/framework/h"
-	"github.com/maddalax/htmgo/framework/service"
+	"github.com/dhax/htmgo/extensions/websocket/opts"
+	"github.com/dhax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/service"
 	"github.com/puzpuzpuz/xsync/v3"
 	"log/slog"
 	"strings"

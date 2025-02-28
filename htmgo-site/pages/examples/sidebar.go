@@ -1,8 +1,8 @@
 package examples
 
 import (
-	"github.com/maddalax/htmgo/framework/datastructure/orderedmap"
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/datastructure/orderedmap"
+	"github.com/dhax/htmgo/framework/h"
 )
 
 func SnippetSidebar() *h.Element {

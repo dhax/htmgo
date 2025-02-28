@@ -1,8 +1,8 @@
 package pages
 
 import (
-	"github.com/maddalax/htmgo/framework/h"
-	"github.com/maddalax/htmgo/framework/service"
+	"github.com/dhax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/service"
 	"htmgo-site/internal/markdown"
 	"io/fs"
 )

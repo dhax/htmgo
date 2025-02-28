@@ -12,8 +12,8 @@ import (
 	"syscall"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/maddalax/htmgo/framework/hx"
-	"github.com/maddalax/htmgo/framework/service"
+	"github.com/dhax/htmgo/framework/hx"
+	"github.com/dhax/htmgo/framework/service"
 )
 
 type RequestContext struct {

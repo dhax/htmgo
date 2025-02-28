@@ -2,8 +2,8 @@ package astgen
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/cli/htmgo/internal/dirutil"
-	"github.com/maddalax/htmgo/cli/htmgo/tasks/process"
+	"github.com/dhax/htmgo/cli/htmgo/internal/dirutil"
+	"github.com/dhax/htmgo/cli/htmgo/tasks/process"
 	"github.com/stretchr/testify/assert"
 	"net/http"
 	"os"

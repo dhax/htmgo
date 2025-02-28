@@ -2,9 +2,9 @@ package css
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/cli/htmgo/internal/dirutil"
-	"github.com/maddalax/htmgo/cli/htmgo/tasks/copyassets"
-	"github.com/maddalax/htmgo/cli/htmgo/tasks/process"
+	"github.com/dhax/htmgo/cli/htmgo/internal/dirutil"
+	"github.com/dhax/htmgo/cli/htmgo/tasks/copyassets"
+	"github.com/dhax/htmgo/cli/htmgo/tasks/process"
 	"log"
 	"log/slog"
 	"path/filepath"

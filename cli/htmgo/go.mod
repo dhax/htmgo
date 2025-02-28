@@ -1,12 +1,12 @@
-module github.com/maddalax/htmgo/cli/htmgo
+module github.com/dhax/htmgo/cli/htmgo
 
-go 1.23.0
+go 1.24.0
 
 require (
 	github.com/fsnotify/fsnotify v1.7.0
 	github.com/google/uuid v1.6.0
-	github.com/maddalax/htmgo/framework v1.0.6-0.20250106162619-24b41a7604a5
-	github.com/maddalax/htmgo/tools/html-to-htmgo v0.0.0-20250106162619-24b41a7604a5
+	github.com/dhax/htmgo/framework v1.0.6-0.20250106162619-24b41a7604a5
+	github.com/dhax/htmgo/tools/html-to-htmgo v0.0.0-20250106162619-24b41a7604a5
 	github.com/stretchr/testify v1.9.0
 	golang.org/x/mod v0.21.0
 	golang.org/x/sys v0.26.0

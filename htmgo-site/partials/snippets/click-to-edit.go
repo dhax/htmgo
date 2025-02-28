@@ -2,7 +2,7 @@ package snippets
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/h"
 )
 
 // RowClasses defined here for simplicity of the example

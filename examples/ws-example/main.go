@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/maddalax/htmgo/extensions/websocket"
-	ws2 "github.com/maddalax/htmgo/extensions/websocket/opts"
-	"github.com/maddalax/htmgo/extensions/websocket/session"
-	"github.com/maddalax/htmgo/framework/h"
-	"github.com/maddalax/htmgo/framework/service"
+	"github.com/dhax/htmgo/extensions/websocket"
+	ws2 "github.com/dhax/htmgo/extensions/websocket/opts"
+	"github.com/dhax/htmgo/extensions/websocket/session"
+	"github.com/dhax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/service"
 	"io/fs"
 	"net/http"
 	"ws-example/__htmgo"

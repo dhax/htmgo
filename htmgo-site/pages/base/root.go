@@ -2,7 +2,7 @@ package base
 
 import (
 	"github.com/google/uuid"
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/h"
 	"htmgo-site/__htmgo/assets"
 	"htmgo-site/partials"
 )

@@ -2,7 +2,7 @@ package module
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/cli/htmgo/tasks/process"
+	"github.com/dhax/htmgo/cli/htmgo/tasks/process"
 	"os/exec"
 	"strings"
 )

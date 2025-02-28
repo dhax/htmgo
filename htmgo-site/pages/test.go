@@ -2,7 +2,7 @@ package pages
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/h"
 	"htmgo-site/pages/base"
 )
 

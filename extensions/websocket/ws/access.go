@@ -1,8 +1,8 @@
 package ws
 
 import (
-	"github.com/maddalax/htmgo/extensions/websocket/internal/wsutil"
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/extensions/websocket/internal/wsutil"
+	"github.com/dhax/htmgo/framework/h"
 )
 
 func ManagerFromCtx(ctx *h.RequestContext) *wsutil.SocketManager {

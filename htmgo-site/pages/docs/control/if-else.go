@@ -1,7 +1,7 @@
 package control
 
 import (
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/h"
 	. "htmgo-site/pages/docs"
 	"htmgo-site/ui"
 )

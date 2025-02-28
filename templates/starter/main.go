@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/framework/config"
-	"github.com/maddalax/htmgo/framework/h"
-	"github.com/maddalax/htmgo/framework/service"
+	"github.com/dhax/htmgo/framework/config"
+	"github.com/dhax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/service"
 	"io/fs"
 	"net/http"
 	"starter-template/__htmgo"

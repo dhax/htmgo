@@ -1,10 +1,10 @@
 package ws
 
 import (
-	"github.com/maddalax/htmgo/extensions/websocket/internal/wsutil"
-	"github.com/maddalax/htmgo/extensions/websocket/session"
-	"github.com/maddalax/htmgo/framework/h"
-	"github.com/maddalax/htmgo/framework/service"
+	"github.com/dhax/htmgo/extensions/websocket/internal/wsutil"
+	"github.com/dhax/htmgo/extensions/websocket/session"
+	"github.com/dhax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/service"
 )
 
 // PushServerSideEvent sends a server side event this specific session

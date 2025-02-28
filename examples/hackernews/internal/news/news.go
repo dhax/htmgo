@@ -2,7 +2,7 @@ package news
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/h"
 	"hackernews/internal/batch"
 	"hackernews/internal/httpjson"
 	"hackernews/internal/sanitize"

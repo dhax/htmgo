@@ -1,8 +1,8 @@
 package wsutil
 
 import (
-	ws2 "github.com/maddalax/htmgo/extensions/websocket/opts"
-	"github.com/maddalax/htmgo/framework/h"
+	ws2 "github.com/dhax/htmgo/extensions/websocket/opts"
+	"github.com/dhax/htmgo/framework/h"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

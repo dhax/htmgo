@@ -1,8 +1,8 @@
 package partials
 
 import (
-	"github.com/maddalax/htmgo/framework/h"
-	"github.com/maddalax/htmgo/tools/html-to-htmgo/htmltogo"
+	"github.com/dhax/htmgo/framework/h"
+	"github.com/dhax/htmgo/tools/html-to-htmgo/htmltogo"
 	"htmgo-site/ui"
 )
 

@@ -1,7 +1,7 @@
 package urlhelper
 
 import (
-	"github.com/maddalax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/h"
 	"net/url"
 )
 

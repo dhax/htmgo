@@ -2,7 +2,7 @@ package process
 
 import (
 	"fmt"
-	"github.com/maddalax/htmgo/cli/htmgo/internal"
+	"github.com/dhax/htmgo/cli/htmgo/internal"
 	"log/slog"
 	"os"
 	"os/exec"

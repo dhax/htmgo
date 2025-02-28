@@ -1,8 +1,8 @@
 package ui
 
 import (
-	"github.com/maddalax/htmgo/framework/h"
-	"github.com/maddalax/htmgo/framework/js"
+	"github.com/dhax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/js"
 )
 
 func SubmitButton(submitText string) *h.Element {

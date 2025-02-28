@@ -5,8 +5,8 @@ import (
 	"chat/sse"
 	"context"
 	"fmt"
-	"github.com/maddalax/htmgo/framework/h"
-	"github.com/maddalax/htmgo/framework/service"
+	"github.com/dhax/htmgo/framework/h"
+	"github.com/dhax/htmgo/framework/service"
 	"time"
 )
 

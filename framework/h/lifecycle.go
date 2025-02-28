@@ -3,8 +3,8 @@ package h
 import (
 	"fmt"
 	"github.com/google/uuid"
-	"github.com/maddalax/htmgo/framework/hx"
-	"github.com/maddalax/htmgo/framework/internal/util"
+	"github.com/dhax/htmgo/framework/hx"
+	"github.com/dhax/htmgo/framework/internal/util"
 	"strings"
 	"time"
 )

@@ -1,8 +1,8 @@
 package run
 
 import (
-	"github.com/maddalax/htmgo/cli/htmgo/internal/dirutil"
-	"github.com/maddalax/htmgo/cli/htmgo/tasks/process"
+	"github.com/dhax/htmgo/cli/htmgo/internal/dirutil"
+	"github.com/dhax/htmgo/cli/htmgo/tasks/process"
 	"runtime"
 )
 
