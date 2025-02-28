@@ -2,13 +2,14 @@ package css
 
 import (
 	"fmt"
-	"github.com/dhax/htmgo/cli/htmgo/internal/dirutil"
-	"github.com/dhax/htmgo/cli/htmgo/tasks/copyassets"
-	"github.com/dhax/htmgo/cli/htmgo/tasks/process"
 	"log"
 	"log/slog"
 	"path/filepath"
 	"runtime"
+
+	"github.com/dhax/htmgo/cli/htmgo/internal/dirutil"
+	"github.com/dhax/htmgo/cli/htmgo/tasks/copyassets"
+	"github.com/dhax/htmgo/cli/htmgo/tasks/process"
 )
 
 func IsTailwindEnabled() bool {
@@ -47,7 +48,6 @@ func GenerateCss(flags ...process.RunFlag) error {
 }
 
 func downloadTailwindCli() {
-
 	if dirutil.HasFileFromRoot(GetTailwindExecutableName()) {
 		slog.Debug("Tailwind CLI already exists. Skipping download.")
 		return
@@ -66,6 +66,8 @@ func downloadTailwindCli() {
 	case os == "darwin" && arch == "amd64":
 		distro = "macos-x64"
 	case os == "linux" && arch == "arm64":
+		distro = "linux-arm64"
+	case os == "linux" && arch == "aarch64":
 		distro = "linux-arm64"
 	case os == "linux" && arch == "amd64":
 		distro = "linux-x64"
@@ -89,7 +91,6 @@ func downloadTailwindCli() {
 	err := dirutil.MoveFile(
 		filepath.Join(process.GetWorkingDir(), fileName),
 		newPath)
-
 	if err != nil {
 		log.Fatalf("Error moving file: %s\n", err.Error())
 	}
